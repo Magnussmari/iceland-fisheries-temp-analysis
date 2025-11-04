@@ -1,0 +1,239 @@
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afli í stað Verðs - Hagsmunaaðilagreining</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 20px;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 600;
+            border: none;
+        }
+        
+        th:first-child {
+            border-top-left-radius: 12px;
+            text-align: left;
+            width: 20%;
+        }
+        
+        th:last-child {
+            border-top-right-radius: 12px;
+        }
+        
+        td {
+            padding: 20px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        td:first-child {
+            font-weight: 600;
+            color: #4a5568;
+            background: #f7fafc;
+            font-size: 1.05em;
+        }
+        
+        .rating {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .rating-label {
+            font-size: 0.95em;
+            font-style: italic;
+            color: #718096;
+            margin-bottom: 12px;
+        }
+        
+        .negative {
+            color: #e53e3e;
+        }
+        
+        .positive {
+            color: #38a169;
+        }
+        
+        .neutral {
+            color: #4299e1;
+        }
+        
+        .content {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #2d3748;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #4a5568;
+            margin-top: 8px;
+            font-size: 0.95em;
+        }
+        
+        .conclusion {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 700;
+            padding: 25px 15px !important;
+        }
+        
+        .loser {
+            background: #fff5f5;
+            color: #c53030;
+        }
+        
+        .winner {
+            background: #f0fff4;
+            color: #2f855a;
+        }
+        
+        .bystander {
+            background: #f7fafc;
+            color: #4a5568;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Afli í stað Verðs: Áhrif á Helstu Hagsmunaaðila</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Áhrifaþáttur</th>
+                    <th><span class="emoji">🐟</span>Stórútgerð (SFS)</th>
+                    <th><span class="emoji">🏛️</span>Ríkissjóður</th>
+                    <th><span class="emoji">🏘️</span>Sveitarfélög</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Heildarmat</td>
+                    <td>
+                        <div class="rating negative">1.75 📉</div>
+                        <div class="rating-label">(Mjög Neikvætt)</div>
+                    </td>
+                    <td>
+                        <div class="rating positive">4.0 📈</div>
+                        <div class="rating-label">(Mjög Jákvætt)</div>
+                    </td>
+                    <td>
+                        <div class="rating neutral">3.25 ➡️</div>
+                        <div class="rating-label">(Hlutlaust/smá jákv.)</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Kjarni málsins</td>
+                    <td>
+                        <div class="content">Missir stjórn á skattstofni. Lítur á ný viðmið (Noregur) sem óraunhæf og flókin.</div>
+                    </td>
+                    <td>
+                        <div class="content">Fær hlutlægan og opinberan skattstofn. Lítur á þetta sem stefnumarkandi sigur fyrir sanngirni.</div>
+                    </td>
+                    <td>
+                        <div class="content">Fær engar nýjar tekjur. Er áhorfandi að breytingunni.</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Lykilágreiningur<br><small>(Stefna & Fyrirsjáanleiki)</small></td>
+                    <td>
+                        <div class="rating negative">1.0 ❌</div>
+                        <div class="rating-label">(Tap á stjórn)</div>
+                        <div class="quote">"Aukið flækjastig og óvissa!"</div>
+                    </td>
+                    <td>
+                        <div class="rating positive">4.5 ✅</div>
+                        <div class="rating-label">(Aukin stjórn)</div>
+                        <div class="quote">"Aukin hlutlægni og fyrirsjáanleiki!"</div>
+                    </td>
+                    <td>
+                        <div class="rating neutral">3.0 ➡️</div>
+                        <div class="rating-label">(Hlutlaust)</div>
+                        <div class="quote">"Kemur okkur ekki við."</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Þar sem allir "hittast"<br><small>(Samfélagsáhrif)</small></td>
+                    <td>
+                        <div class="rating neutral">3.0</div>
+                        <div class="rating-label">(Hlutlaust)</div>
+                    </td>
+                    <td>
+                        <div class="rating neutral">3.0</div>
+                        <div class="rating-label">(Hlutlaust)</div>
+                    </td>
+                    <td>
+                        <div class="rating neutral">4.0 📊</div>
+                        <div class="rating-label">(Smá jákvætt)</div>
+                        <div class="content" style="font-size: 0.9em; margin-top: 8px;">Aðeins vegna loforðs um skýrslu Byggðastofnunar.</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="font-weight: 700; font-size: 1.1em;">🎯 Niðurstaða</td>
+                    <td class="conclusion loser">🔴 TAPARI</td>
+                    <td class="conclusion winner">🟢 SIGURVEGARI</td>
+                    <td class="conclusion bystander">⚪ Á HLIÐARLÍNUNNI</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

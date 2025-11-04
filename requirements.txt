@@ -1,0 +1,12 @@
+pandas
+numpy
+xarray
+netCDF4
+streamlit
+plotly
+openpyxl
+copernicusmarine
+scipy
+matplotlib
+seaborn
+statsmodels
